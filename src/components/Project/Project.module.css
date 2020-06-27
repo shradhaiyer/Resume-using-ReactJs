@@ -1,0 +1,115 @@
+.container {
+  background-image: url("../../assets/offwhite.jpg");
+  width: 100%;
+  height: 900px;
+  display: flex;
+  position: relative;
+}
+.container .header {
+  height: 200px;
+  width: 100%;
+  background-image: url("../../assets/back.jpg");
+}
+.container .header .h1tag {
+  color: rgb(206, 199, 199);
+}
+.container .card {
+  position: absolute;
+  display: flex;
+  height: 175px;
+  width: 65%;
+  background-image: url("../../assets/offwhite.jpg");
+  border-radius: 10px;
+  box-shadow: -1rem 0 0.5rem rgb(170, 168, 168);
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  left: 130px;
+  top: 100px;
+  padding: 90px 90px;
+}
+.container .card1 {
+  position: absolute;
+  display: flex;
+  height: 175px;
+  width: 65%;
+  background-image: url("../../assets/offwhite.jpg");
+  border-radius: 10px;
+  box-shadow: -1rem 0 0.5rem rgb(170, 168, 168);
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  left: 130px;
+  top: 500px;
+  padding: 90px 90px;
+}
+.container .card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+.container .card1:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.container .card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.container .card .title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.container .card .column .round {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  float: left;
+}
+.container .card1 .column .round {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  float: left;
+}
+.container .card .text {
+  position: absolute;
+  margin-left: 200px;
+  color: rgb(50, 50, 50);
+}
+.container .card1 .text {
+  position: absolute;
+  margin-left: 200px;
+  color: rgb(50, 50, 50);
+}
+.container .card .text .uni {
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+.container .card1 .text .uni {
+  border-bottom: 1px solid rgb(50, 50, 50);
+}
+.container .card .text .para {
+  font-size: medium;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+.container .card1 .text .para {
+  font-size: medium;
+  color: rgb(50, 50, 50);
+  font-weight: bold;
+}
+
+.container .card .text .github {
+  color: rgb(50, 50, 50);
+  float: right;
+  margin-right: 20px;
+}
+.container .card1 .text .github {
+  color: rgb(50, 50, 50);
+  float: right;
+  margin-right: 20px;
+}
